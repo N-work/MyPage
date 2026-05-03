@@ -1,0 +1,169 @@
+/* 全体のフォントや背景色を指定 */
+body {
+    font-family: sans-serif; /* 文字の種類（フォント）を一般的なものに設定 */
+    background-color: #222;
+    color: #333; /* 文字の色を濃いグレーに */
+    line-height: 1.6; /* 行の高さを調整して読みやすく */
+    margin: 0; /* ページの外側の余白をなくす */
+    padding: 0; /* ページの内側の余白をなくす */
+    text-align: center; /* ページ全体の文字を中央寄せに */
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #333; /* ヘッダーの背景色を青に */
+    color: white; /* ヘッダー内の文字色を白に */
+    padding: 2rem 0; /* 上下左右の余白を設定（上下に大きく、左右はなし） */
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+}
+
+header h1 {
+    font-size: 2.5rem; /* 見出しの文字サイズを大きく */
+    margin: 0; /* 見出しの外側の余白をなくす */
+}
+
+/* メインコンテンツのスタイル */
+main {
+    max-width: 800px; /* メインコンテンツの最大幅を800pxに制限 */
+    margin: 2rem auto; /* 上下に2rem、左右は自動で中央寄せに */
+    padding: 0 1rem; /* 左右に少し内側の余白を設定 */
+    background-color: #222;
+}
+
+/* プロフィールセクションのスタイル */
+.profile {
+    background-color: rgb(73, 73, 73); /* プロフィール背景色を白に */
+    padding: 2rem; /* 内側の余白を大きめに */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影をつけて立体感を出す */
+    margin-bottom: 2rem; /* 下に余白 */
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+}
+
+.profile-maintext {
+    color : white;
+}
+
+.profile-text {
+    color : white;
+}
+
+.profile-img {
+    width: 150px; /* 画像の幅を150pxに */
+    height: 150px; /* 画像の高さを150pxに */
+    border-radius: 50%; /* 角を50%丸めて円形にする */
+    object-fit: cover; /* 画像がはみ出ないように中央を切り取る */
+    margin-top: 1rem; /* 上に余白 */
+}
+
+.profile h2 {
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+.links h2 {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+/* リンクセクションのスタイル */
+.links ul {
+    list-style: none; /* リストの点（・）を消す */
+    padding: 0; /* 内側の余白をなくす */
+}
+
+.links li {
+    margin-bottom: 1rem; /* 各リスト項目の下に余白 */
+}
+
+.links a {
+    display: flex;
+    align-items: center;      /* 縦中央 */
+    justify-content: center;  /* ← 横中央（これが足りない） */
+    gap: 8px;
+
+    background-color: #525252;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,1);
+}
+
+.links a:hover {
+    background-color: #707070; /* :hoverは、マウスを乗せた時の見た目を示す。背景色を少し濃いグレーに */
+}
+
+.icon {
+  border-radius: 20%; /* 角を50%丸めて円形にする */
+}
+
+.gallery {
+  max-width: 600px;   /* 横幅を制限 */
+  margin: 0 auto;     /* ← これで中央揃え */
+}
+
+.photo-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #353535;
+  box-shadow: 0 4px 10px rgba(0,0,0,1);
+}
+
+/* 画像部分 */
+.photo-image {
+  overflow: hidden;
+}
+
+.photo-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+/* ホバーで拡大 */
+.photo-card:hover img {
+  transform: scale(1.05);
+}
+
+/* 詳細情報（最初は隠す） */
+.photo-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: #353535;
+}
+
+/* ホバーで表示 */
+.photo-card:hover .photo-info {
+  max-height: 100px; /* ← 内容に合わせて調整 */
+}
+
+.photo-title {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  text-align: left;
+  padding-left: 30px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+.photo-desc {
+  padding: 0 0 10px 30px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.yajirusibutton {
+    transform: rotate(180deg);
+}
+
+.headers h1 {
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+}
+
+.blenderbutton {
+    border-radius: 20%; /* 角を50%丸めて円形にする */
+}
